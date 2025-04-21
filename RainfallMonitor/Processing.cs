@@ -65,11 +65,11 @@ namespace RainfallMonitor.Processing
 
                 if(!deviceData.Any()) continue;//if no data present, proceed anyway
 
-                double avg = deviceData.Average(da => da.Rainfall);//average rainfall of current device
+                double avg = deviceData.Average(dd => dd.Rainfall);//average rainfall of current device
 
                 string color = "";
 
-                if(avg >= 15 || deviceData.Any(da => da.Rainfall > 30))
+                if(avg >= 15 || deviceData.Any(dd => dd.Rainfall > 30))
                 {
                     color = "Red";
                 }
@@ -82,6 +82,46 @@ namespace RainfallMonitor.Processing
                     color = "Green";
                 }
 
+                string trend = "Not enough info";
+
+                if(deviceData.Count>=2)
+                {
+                    double firstHalfRainfallSum = 0; 
+                    double secondHalfRainfallSum = 0; 
+                    for(int i = 0; i < deviceData.Count; i++)
+                    {
+                        if(i < deviceData.Count/2)
+                        {
+                            firstHalfRainfallSum += deviceData.ElementAt(i).Rainfall;
+                        }
+                        else
+                        {
+                            secondHalfRainfallSum += deviceData.ElementAt(i).Rainfall;
+                        }
+                    }
+
+                    double firstHalfRainfallAvg = firstHalfRainfallSum/(deviceData.Count/2) ; 
+                    double secondHalfRainfallAvg = secondHalfRainfallSum/(deviceData.Count/2) ; 
+
+                    if (firstHalfRainfallAvg > secondHalfRainfallAvg)
+                    {
+                        trend = "Increasing";
+                    }
+                    else if (secondHalfRainfallAvg > firstHalfRainfallAvg)
+                    {
+                        trend = "Decreasing";
+                    }
+                    else
+                    {
+                        trend = "stable";
+                    }
+
+                }
+                else if (deviceData.Count == 1)
+                {
+                    trend = "Only 1 reading so far...";
+                }
+
                 status.Add(new RainfallReadings
                 {
                     DeviceID = d.DeviceID,
@@ -89,8 +129,7 @@ namespace RainfallMonitor.Processing
                     Location = d.Location,
                     AverageRainfall = avg,
                     ColorStatus = color,
-                    Trend = "",
-
+                    Trend = trend,
                 });
             }
 
