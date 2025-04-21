@@ -30,6 +30,6 @@ namespace RainfallMonitor.Models
         public string Location{get;set;}
         public double AverageRainfall{get;set;}
         public string ColorStatus{get;set;}
-        public string trend{get;set;}
+        public string Trend{get;set;}
     }
 }
