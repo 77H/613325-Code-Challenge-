@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RainfallMonitor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33a418c0d382cc6c85baba324f13e241e8aae70e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c1e37e02baf8033f6ead775ada115ff646ccb7d")]
 [assembly: System.Reflection.AssemblyProductAttribute("RainfallMonitor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RainfallMonitor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
