@@ -16,7 +16,7 @@ namespace RainfallMonitor.Models
         public string Location{get;set;}
     }
 
-        public class DataCSV
+        public class Data
     {
         public string DeviceID{get;set;}
         public DateTime Time{get;set;}
