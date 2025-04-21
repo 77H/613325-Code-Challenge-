@@ -1,0 +1,17 @@
+/Users/th/Desktop/613325_Coding_Challenge/RainfallMonitor/bin/Debug/net9.0/RainfallMonitor
+/Users/th/Desktop/613325_Coding_Challenge/RainfallMonitor/bin/Debug/net9.0/RainfallMonitor.deps.json
+/Users/th/Desktop/613325_Coding_Challenge/RainfallMonitor/bin/Debug/net9.0/RainfallMonitor.runtimeconfig.json
+/Users/th/Desktop/613325_Coding_Challenge/RainfallMonitor/bin/Debug/net9.0/RainfallMonitor.dll
+/Users/th/Desktop/613325_Coding_Challenge/RainfallMonitor/bin/Debug/net9.0/RainfallMonitor.pdb
+/Users/th/Desktop/613325_Coding_Challenge/RainfallMonitor/bin/Debug/net9.0/CsvHelper.dll
+/Users/th/Desktop/613325_Coding_Challenge/RainfallMonitor/obj/Debug/net9.0/RainfallMonitor.csproj.AssemblyReference.cache
+/Users/th/Desktop/613325_Coding_Challenge/RainfallMonitor/obj/Debug/net9.0/RainfallMonitor.GeneratedMSBuildEditorConfig.editorconfig
+/Users/th/Desktop/613325_Coding_Challenge/RainfallMonitor/obj/Debug/net9.0/RainfallMonitor.AssemblyInfoInputs.cache
+/Users/th/Desktop/613325_Coding_Challenge/RainfallMonitor/obj/Debug/net9.0/RainfallMonitor.AssemblyInfo.cs
+/Users/th/Desktop/613325_Coding_Challenge/RainfallMonitor/obj/Debug/net9.0/RainfallMonitor.csproj.CoreCompileInputs.cache
+/Users/th/Desktop/613325_Coding_Challenge/RainfallMonitor/obj/Debug/net9.0/Rainfall.0F3173C9.Up2Date
+/Users/th/Desktop/613325_Coding_Challenge/RainfallMonitor/obj/Debug/net9.0/RainfallMonitor.dll
+/Users/th/Desktop/613325_Coding_Challenge/RainfallMonitor/obj/Debug/net9.0/refint/RainfallMonitor.dll
+/Users/th/Desktop/613325_Coding_Challenge/RainfallMonitor/obj/Debug/net9.0/RainfallMonitor.pdb
+/Users/th/Desktop/613325_Coding_Challenge/RainfallMonitor/obj/Debug/net9.0/RainfallMonitor.genruntimeconfig.cache
+/Users/th/Desktop/613325_Coding_Challenge/RainfallMonitor/obj/Debug/net9.0/ref/RainfallMonitor.dll
