@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "fTmLm+uE4MM=",
+  "dgSpecHash": "XFzEsvH68ZM=",
   "success": true,
   "projectFilePath": "/Users/th/Desktop/613325_Coding_Challenge/RainfallMonitor/RainfallMonitor.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/th/.nuget/packages/csvhelper/33.0.1/csvhelper.33.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
