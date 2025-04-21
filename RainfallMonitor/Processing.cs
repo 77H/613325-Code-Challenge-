@@ -65,13 +65,30 @@ namespace RainfallMonitor.Processing
 
                 if(!deviceData.Any()) continue;//if no data present, proceed anyway
 
+                double avg = deviceData.Average(da => da.Rainfall);//average rainfall of current device
+
+                string color = "";
+
+                if(avg >= 15 || deviceData.Any(da => da.Rainfall > 30))
+                {
+                    color = "Red";
+                }
+                else if(avg >= 10 && avg < 15)
+                {
+                    color = "Amber";
+                }
+                else if(avg < 10)
+                {
+                    color = "Green";
+                }
+
                 status.Add(new RainfallReadings
                 {
                     DeviceID = d.DeviceID,
                     DeviceName = d.DeviceName,
                     Location = d.Location,
-                    AverageRainfall = 0,
-                    ColorStatus = "",
+                    AverageRainfall = avg,
+                    ColorStatus = color,
                     Trend = "",
 
                 });
